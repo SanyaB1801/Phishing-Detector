@@ -17,10 +17,9 @@ src/: Source code for different parts of the project.
 - model_training.py: Script for loading data, preprocessing, training the model, evaluating, and saving the model and vectorizer.
 - utils.py: Utility functions (if needed).
 - predict.py: Function for loading the model and vectorizer, and predicting if an email is phishing or not.
-- models/: Saved models.
-
-phishing_model.pkl: The trained phishing detection model.
-tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform email text data.
+models/: Saved models.
+- phishing_model.pkl: The trained phishing detection model.
+- tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform email text data.
 streamlit_app.py: Streamlit app script for deploying a web interface where users can input email text and get predictions.
 
 requirements.txt: List of dependencies required for the project.
