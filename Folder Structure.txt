@@ -1,0 +1,18 @@
+Phishing-Detector/
+├── data/
+│ └── CEAS_08.csv
+├── notebooks/
+│ └── phishing_detection.ipynb
+├── src/
+│ ├── init.py
+│ ├── data_preprocessing.py
+│ ├── model_training.py
+│ ├── utils.py
+│ └── predict.py
+├── models/
+│ ├── phishing_model.pkl
+│ └── tfidf_vectorizer.pkl
+├── streamlit_app.py
+├── requirements.txt
+├── Folder Structure.txt
+└── README.md
