@@ -3,26 +3,19 @@
 ## Objective:
 The primary goal of this project is to build a machine learning model that can detect phishing emails. Phishing emails are fraudulent messages designed to trick recipients into providing sensitive information, and detecting them is crucial for cybersecurity.
 
-## Project Structure:
+## Project Components:
 
-data/
+dataset:
 - CEAS_08.csv: The dataset containing email data used for training the model.
 
-notebooks/
-- phishing_detection.ipynb: A Jupyter notebook containing the entire workflow for data preprocessing, model training, evaluation, and saving the model.
+notebook:
+- preprocess.ipynb: A Jupyter notebook containing the entire workflow for data preprocessing, model training, evaluation, and saving the model.
 
-src/: Source code for different parts of the project.
-- __init__.py: Marks the directory as a Python package.
-- data_preprocessing.py: Contains the function for preprocessing email text.
-- model_training.py: Script for loading data, preprocessing, training the model, evaluating, and saving the model and vectorizer.
-- utils.py: Utility functions (if needed).
-- predict.py: Function for loading the model and vectorizer, and predicting if an email is phishing or not.
-models/: Saved models.
+models:
 - phishing_model.pkl: The trained phishing detection model.
 - tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform email text data.
-streamlit_app.py: Streamlit app script for deploying a web interface where users can input email text and get predictions.
 
-requirements.txt: List of dependencies required for the project.
+app.py: Streamlit app script for deploying a web interface where users can input email text and get predictions.
 
 README.md: Project overview, setup instructions, and usage guide.
 
@@ -46,13 +39,10 @@ The app processes the input, uses the trained model to predict if the email is p
 ## Setup
 
 1. Clone the repository.
-2. Install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Download the dataset and run preprocess.ipynb.
 3. Run the Streamlit app:
     ```bash
-    streamlit run streamlit_app.py
+    streamlit run app.py
     ```
 
 ## Usage
