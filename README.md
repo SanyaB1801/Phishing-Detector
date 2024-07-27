@@ -34,7 +34,7 @@ The model's performance is evaluated using accuracy and a classification report.
 5. Model Saving:
 The trained model and TF-IDF vectorizer are saved using joblib.
 6. Streamlit Web Application:
-A Streamlit app (streamlit_app.py) provides a user interface where users can enter the body of an email.
+A Streamlit app (app.py) provides a user interface where users can enter the body of an email.
 The app processes the input, uses the trained model to predict if the email is phishing, and displays the result.
 
 ## Setup
