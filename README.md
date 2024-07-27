@@ -7,6 +7,7 @@ The primary goal of this project is to build a machine learning model that can d
 
 dataset:
 - CEAS_08.csv: The dataset containing email data used for training the model.
+- https://figshare.com/articles/dataset/Curated_Dataset_-_Phishing_Email/24899952?file=43817124
 
 notebook:
 - preprocess.ipynb: A Jupyter notebook containing the entire workflow for data preprocessing, model training, evaluation, and saving the model.
