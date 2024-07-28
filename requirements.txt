@@ -1,0 +1,7 @@
+pandas
+nltk
+re
+sklearn
+tensorflow
+joblib
+streamlit
