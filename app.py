@@ -48,9 +48,21 @@ st.markdown("""
     .stTextArea>div>div>textarea {
         background-color: #E0F7FA;
         color: #006064;
+        border: 2px solid #006064;
     }
     .stMarkdown {
         color: #006064;
+    }
+    .css-18e3th9 {
+        background-color: #006064;
+        color: white;
+    }
+    .css-1d391kg {
+        background-color: #006064;
+    }
+    .css-1lcbmhc {
+        color: #006064;
+        background-color: #E0F7FA;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -61,7 +73,16 @@ st.sidebar.write('Enter the email content in the text box below and click Predic
 st.title('Phishing Email Predictor')
 st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
-email = st.text_area('Enter the email content here:', height=250)
+st.image("https://i.imgur.com/J9PGuF0.png", use_column_width=True)  # Adding an image for visual appeal
+
+st.subheader('Instructions:')
+st.markdown("""
+1. Enter the email content in the text area below.
+2. Click the **Predict** button to analyze the email.
+3. The result will be displayed below.
+""")
+
+email = st.text_area('Enter the email content here:', height=250, placeholder='Type the email content here...')
 
 if st.button('Predict'):
     if email:
@@ -76,3 +97,6 @@ if st.button('Predict'):
 
 st.sidebar.markdown('### About')
 st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
+
+st.sidebar.markdown('### Contact')
+st.sidebar.info('For more information or feedback, please contact us at support@example.com.')
