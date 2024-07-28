@@ -36,40 +36,33 @@ st.set_page_config(page_title='Phishing Email Detector', page_icon=':email:', la
 st.markdown("""
     <style>
     .main {
-        background-color: #D9D8D0;
+        background-color: #E0F7FA;
     }
-    .css-1d391kg {
-        background-color: #B0B896;
-    }
-    .css-1lcbmhc {
-        background-color: #768A59;
-        color: #FFFFFF;
+    .sidebar .sidebar-content {
+        background-color: #B2EBF2;
     }
     .stButton>button {
-        background-color: #768A59;
-        color: #FFFFFF;
+        background-color: #80DEEA;
+        color: #006064;
     }
     .stTextArea>div>div>textarea {
-        background-color: #D9D8D0;
-        color: #2F4F2F;
-        border: 2px solid #2F4F2F;
+        background-color: #E0F7FA;
+        color: #006064;
+        border: 2px solid #006064;
     }
     .stMarkdown {
-        color: #2F4F2F;
+        color: #006064;
     }
     .css-18e3th9 {
-        background-color: #2F4F2F;
-        color: #FFFFFF;
+        background-color: #006064;
+        color: white;
     }
-    .title-text {
-        font-size: 2.5rem;
-        color: #2F4F2F;
-        text-align: center;
+    .css-1d391kg {
+        background-color: #006064;
     }
-    .subheader-text {
-        font-size: 1.5rem;
-        color: #2F4F2F;
-        text-align: center;
+    .css-1lcbmhc {
+        color: #006064;
+        background-color: #E0F7FA;
     }
     </style>
     """, unsafe_allow_html=True)
