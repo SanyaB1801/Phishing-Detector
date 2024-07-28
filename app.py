@@ -65,10 +65,10 @@ st.markdown("""
         background-color: #E0F7FA;
     }
     .css-1v0mbdj a {
-            color: #7F92A0 !important; /* Change this to the desired color */
+            color: #7F92A0 !important; 
     }
     .css-1v0mbdj a:hover {
-            color: #7F92A0 !important; /* Change this to the desired hover color */
+            color: #7F92A0 !important;
     }
     </style>
     
