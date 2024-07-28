@@ -119,4 +119,4 @@ st.sidebar.markdown('### About')
 st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
 
 st.sidebar.markdown('### Contact')
-st.sidebar.info('For more information or feedback, please contact us at support@example.com.')
+st.sidebar.info('For more information or feedback, please contact us at sanyabehera13@gmail.com.')
