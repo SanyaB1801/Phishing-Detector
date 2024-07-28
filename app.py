@@ -38,8 +38,12 @@ st.markdown("""
     .main {
         background-color: #D9D8D0;
     }
-    .sidebar .sidebar-content {
+    .css-1d391kg {
         background-color: #B0B896;
+    }
+    .css-1lcbmhc {
+        background-color: #768A59;
+        color: #FFFFFF;
     }
     .stButton>button {
         background-color: #768A59;
@@ -57,13 +61,6 @@ st.markdown("""
         background-color: #2F4F2F;
         color: #FFFFFF;
     }
-    .css-1d391kg {
-        background-color: #2F4F2F;
-    }
-    .css-1lcbmhc {
-        color: #2F4F2F;
-        background-color: #D9D8D0;
-    }
     .title-text {
         font-size: 2.5rem;
         color: #2F4F2F;
@@ -76,6 +73,7 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
+
 st.sidebar.header('Phishing Email Detector')
 st.sidebar.write('Enter the email content in the text box below and click Predict to check if the email is a phishing attempt.')
 
