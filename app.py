@@ -32,11 +32,34 @@ def preprocess_email(email):
 # Streamlit app
 st.set_page_config(page_title='Phishing Email Predictor', page_icon=':email:', layout='wide')
 
+# CSS styles
+st.markdown("""
+    <style>
+    .main {
+        background-color: #E0F7FA;
+    }
+    .sidebar .sidebar-content {
+        background-color: #B2EBF2;
+    }
+    .stButton>button {
+        background-color: #80DEEA;
+        color: #006064;
+    }
+    .stTextArea>div>div>textarea {
+        background-color: #E0F7FA;
+        color: #006064;
+    }
+    .stMarkdown {
+        color: #006064;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 st.sidebar.header('Phishing Email Predictor')
 st.sidebar.write('Enter the email content in the text box below and click Predict to check if the email is a phishing attempt.')
 
 st.title('Phishing Email Predictor')
-st.markdown('This app uses a machine learning model to predict whether an email is a phishing attempt or not.')
+st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
 email = st.text_area('Enter the email content here:', height=250)
 
