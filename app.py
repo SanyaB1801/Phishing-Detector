@@ -6,8 +6,10 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-# Ensure NLTK data is downloaded
-nltk.data.path.append('nltk_data')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # Load the trained model and vectorizer
 model = joblib.load('phishing_model.pkl')
