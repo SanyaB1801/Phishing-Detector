@@ -3,4 +3,4 @@ streamlit==1.37.0
 joblib
 pandas==2.2.2
 scikit-learn
-nlk==3.8.1
+nltk==3.8.1
