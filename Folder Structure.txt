@@ -1,8 +1,0 @@
-Phishing-Detector/
-├── Folder Structure.txt
-├── README.md
-├── app.py
-├── phishing_model.pkl
-├── preprocess.ipynb
-├── requirements.txt
-└── tfidf_vectorizer.pkl
