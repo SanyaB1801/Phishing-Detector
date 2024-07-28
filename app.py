@@ -65,6 +65,10 @@ st.markdown("""
         background-color: #E0F7FA;
     }
     </style>
+    <div class="button-container">
+        <a href="https://github.com/sanyab1801/phishing-detector" class="github-button">GitHub</a>
+        <a href="https://github.com/sanyab1801/phishing-detector/stargazers" class="star-button">Star</a>
+    </div>
     """, unsafe_allow_html=True)
 
 st.sidebar.header('Phishing Email Detector')
