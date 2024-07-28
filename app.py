@@ -64,11 +64,14 @@ st.markdown("""
         color: #006064;
         background-color: #E0F7FA;
     }
+    .css-1v0mbdj a {
+            color: #004c6d !important; /* Change this to the desired color */
+    }
+    .css-1v0mbdj a:hover {
+            color: #007f9b !important; /* Change this to the desired hover color */
+    }
     </style>
-    <div class="button-container">
-        <a href="https://github.com/sanyab1801/phishing-detector" class="github-button">GitHub</a>
-        <a href="https://github.com/sanyab1801/phishing-detector/stargazers" class="star-button">Star</a>
-    </div>
+    
     """, unsafe_allow_html=True)
 
 st.sidebar.header('Phishing Email Detector')
