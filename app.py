@@ -36,37 +36,46 @@ st.set_page_config(page_title='Phishing Email Detector', page_icon=':email:', la
 st.markdown("""
     <style>
     .main {
-        background-color: #D9D8D0;  /* Light neutral background color */
+        background-color: #D9D8D0;
     }
     .sidebar .sidebar-content {
-        background-color: #B0B896;  /* Sidebar light green background color */
+        background-color: #B0B896;
     }
     .stButton>button {
-        background-color: #768A59;  /* Button medium green background color */
-        color: #FFFFFF;  /* Button text color */
+        background-color: #768A59;
+        color: #FFFFFF;
     }
     .stTextArea>div>div>textarea {
-        background-color: #D9D8D0;  /* Text area light neutral background color */
-        color: #2F4F2F;  /* Text area text color */
-        border: 2px solid #2F4F2F;  /* Text area border color */
+        background-color: #D9D8D0;
+        color: #2F4F2F;
+        border: 2px solid #2F4F2F;
     }
     .stMarkdown {
-        color: #2F4F2F;  /* Markdown text color */
+        color: #2F4F2F;
     }
     .css-18e3th9 {
-        background-color: #2F4F2F;  /* Top bar dark green background color */
-        color: #FFFFFF;  /* Top bar text color */
+        background-color: #2F4F2F;
+        color: #FFFFFF;
     }
     .css-1d391kg {
-        background-color: #2F4F2F;  /* Top bar dark green background color */
+        background-color: #2F4F2F;
     }
     .css-1lcbmhc {
-        color: #2F4F2F;  /* Sidebar text color */
-        background-color: #D9D8D0;  /* Sidebar text background color */
+        color: #2F4F2F;
+        background-color: #D9D8D0;
+    }
+    .title-text {
+        font-size: 2.5rem;
+        color: #2F4F2F;
+        text-align: center;
+    }
+    .subheader-text {
+        font-size: 1.5rem;
+        color: #2F4F2F;
+        text-align: center;
     }
     </style>
     """, unsafe_allow_html=True)
-
 st.sidebar.header('Phishing Email Detector')
 st.sidebar.write('Enter the email content in the text box below and click Predict to check if the email is a phishing attempt.')
 
