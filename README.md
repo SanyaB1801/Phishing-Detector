@@ -1,41 +1,52 @@
 # Phishing-Detector
 
 ## Objective:
-The primary goal of this project is to build a machine learning model that can detect phishing emails. Phishing emails are fraudulent messages designed to trick recipients into providing sensitive information, and detecting them is crucial for cybersecurity.
+The primary goal of this project is to build a machine learning model capable of detecting phishing emails. Phishing emails are fraudulent messages designed to trick recipients into providing sensitive information, and detecting them is crucial for cybersecurity.
+
+## Key Features:
+- Model Development: Developed a machine learning model to detect phishing emails with high accuracy.
+- Frontend Implementation: Designed and implemented the front-end using the Streamlit framework to provide a user-friendly web interface for real-time email phishing detection.
+- Data Preprocessing: Utilized Pandas and NLTK for data preprocessing, including tokenization, stopwords removal, and lemmatization.
+- Feature Extraction: Employed TfidfVectorizer from Scikit-learn for feature extraction, converting email text into numerical data.
+- Classification Model: Trained a Multinomial Naive Bayes classifier to classify emails as phishing or non-phishing.
+- Performance Evaluation: Achieved high model performance, evaluated using accuracy score and classification report metrics.
+- Model Management: Saved and managed the trained model and vectorizer using Joblib for future predictions.
 
 ## Project Components:
 
-dataset:
+1. **Dataset**:
 - CEAS_08.csv: The dataset containing email data used for training the model.
-- https://figshare.com/articles/dataset/Curated_Dataset_-_Phishing_Email/24899952?file=43817124
+- Dataset Source: [Curated Dataset - Phishing Email](https://figshare.com/articles/dataset/Curated_Dataset_-_Phishing_Email/24899952?file=43817124)
 
-notebook:
+2. **Notebook**:
 - preprocess.ipynb: A Jupyter notebook containing the entire workflow for data preprocessing, model training, evaluation, and saving the model.
 
-models:
+3. **Models**:
 - phishing_model.pkl: The trained phishing detection model.
 - tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform email text data.
 
-app.py: Streamlit app script for deploying a web interface where users can input email text and get predictions.
+4. **App Script**:
+- app.py: Streamlit app script for deploying a web interface where users can input email text and get predictions.
 
-README.md: Project overview, setup instructions, and usage guide.
+5. **Documentation**:
+- README.md: Project overview, setup instructions, and usage guide.
 
 ## Workflow:
 
-1. Data Loading and Preprocessing:
-The email data is loaded from CEAS_08.csv.
-Emails are preprocessed using preprocess_email function to clean the text and remove stopwords.
-2. Feature Extraction:
-TF-IDF Vectorizer is used to convert the cleaned email text into numerical features suitable for machine learning.
-3. Model Training:
-A Naive Bayes classifier (MultinomialNB) is trained on the processed email data to distinguish between phishing and non-phishing emails.
-4. Model Evaluation:
-The model's performance is evaluated using accuracy and a classification report.
-5. Model Saving:
-The trained model and TF-IDF vectorizer are saved using joblib.
-6. Streamlit Web Application:
-A Streamlit app (app.py) provides a user interface where users can enter the body of an email.
-The app processes the input, uses the trained model to predict if the email is phishing, and displays the result.
+1. **Data Loading and Preprocessing**:
+- Load email data from CEAS_08.csv.
+- Preprocess emails using preprocess_email function to clean the text and remove stopwords.
+2. **Feature Extraction**:
+- Use TF-IDF Vectorizer to convert the cleaned email text into numerical features suitable for machine learning.
+3. **Model Training**:
+- Train a Naive Bayes classifier (MultinomialNB) on the processed email data to distinguish between phishing and non-phishing emails.
+4. **Model Evaluation**:
+- Evaluate the model's performance using accuracy and a classification report.
+5. **Model Saving**:
+- Save the trained model and TF-IDF vectorizer using Joblib.
+6. **Streamlit Web Application**:
+- Develop a Streamlit app (app.py) providing a user interface where users can enter the body of an email.
+- The app processes the input, uses the trained model to predict if the email is phishing, and displays the result.
 
 ## Setup
 
