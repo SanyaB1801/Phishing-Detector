@@ -5,6 +5,11 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+# Download necessary NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 # Load the trained model and vectorizer
 model = joblib.load('phishing_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
