@@ -36,33 +36,33 @@ st.set_page_config(page_title='Phishing Email Detector', page_icon=':email:', la
 st.markdown("""
     <style>
     .main {
-        background-color: #E0F7FA;
+        background-color: #D9D8D0;  /* Light neutral background color */
     }
     .sidebar .sidebar-content {
-        background-color: #B2EBF2;
+        background-color: #B0B896;  /* Sidebar light green background color */
     }
     .stButton>button {
-        background-color: #80DEEA;
-        color: #006064;
+        background-color: #768A59;  /* Button medium green background color */
+        color: #FFFFFF;  /* Button text color */
     }
     .stTextArea>div>div>textarea {
-        background-color: #E0F7FA;
-        color: #006064;
-        border: 2px solid #006064;
+        background-color: #D9D8D0;  /* Text area light neutral background color */
+        color: #2F4F2F;  /* Text area text color */
+        border: 2px solid #2F4F2F;  /* Text area border color */
     }
     .stMarkdown {
-        color: #006064;
+        color: #2F4F2F;  /* Markdown text color */
     }
     .css-18e3th9 {
-        background-color: #006064;
-        color: white;
+        background-color: #2F4F2F;  /* Top bar dark green background color */
+        color: #FFFFFF;  /* Top bar text color */
     }
     .css-1d391kg {
-        background-color: #006064;
+        background-color: #2F4F2F;  /* Top bar dark green background color */
     }
     .css-1lcbmhc {
-        color: #006064;
-        background-color: #E0F7FA;
+        color: #2F4F2F;  /* Sidebar text color */
+        background-color: #D9D8D0;  /* Sidebar text background color */
     }
     </style>
     """, unsafe_allow_html=True)
