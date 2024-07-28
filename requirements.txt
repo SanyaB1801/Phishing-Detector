@@ -1,7 +1,7 @@
-pandas
-nltk
 re
-sklearn
 tensorflow
-joblib
 streamlit
+joblib
+pandas
+scikit-learn
+nltk
