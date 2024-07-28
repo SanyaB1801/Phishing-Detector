@@ -73,6 +73,26 @@ st.sidebar.write('Enter the email content in the text box below and click Predic
 st.title('Phishing Email Detector')
 st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
+st.subheader('Instructions:')
+st.markdown("""
+1. Enter the email content in the text area below.
+2. Click the **Predict** button to analyze the email.
+3. The result will be displayed below.
+""")
+
+email = st.text_area('Enter the email content here:', height=250, placeholder='Type the email content here...')
+
+if st.button('Predict'):
+    if email:
+        with st.spinner('Analyzing...'):
+            email_preprocessed = preprocess_email(email)
+            email_vectorized = vectorizer.transform([email_preprocessed])
+            prediction = model.predict(email_vectorized)
+            result = 'Phishing' if prediction[0] == 1 else 'Not Phishing'
+        st.success(f'The email is: **{result}**')
+    else:
+        st.error('Please enter email content')
+
 st.subheader('What is Phishing?')
 st.markdown("""
 Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware, the freezing of the system as part of a ransomware attack, or the revealing of sensitive information.
@@ -94,26 +114,6 @@ This app uses a machine learning model trained to detect phishing emails based o
 
 By using natural language processing (NLP) techniques, the model can analyze the textual content of emails and make predictions based on patterns learned during training.
 """)
-
-st.subheader('Instructions:')
-st.markdown("""
-1. Enter the email content in the text area below.
-2. Click the **Predict** button to analyze the email.
-3. The result will be displayed below.
-""")
-
-email = st.text_area('Enter the email content here:', height=250, placeholder='Type the email content here...')
-
-if st.button('Predict'):
-    if email:
-        with st.spinner('Analyzing...'):
-            email_preprocessed = preprocess_email(email)
-            email_vectorized = vectorizer.transform([email_preprocessed])
-            prediction = model.predict(email_vectorized)
-            result = 'Phishing' if prediction[0] == 1 else 'Not Phishing'
-        st.success(f'The email is: **{result}**')
-    else:
-        st.error('Please enter email content')
 
 st.sidebar.markdown('### About')
 st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
