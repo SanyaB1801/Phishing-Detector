@@ -102,18 +102,22 @@ Phishing attacks have become increasingly sophisticated and often look legitimat
 
 st.image("mail-phishing.jpg", width=600)  # Adding an image for visual appeal
 
-st.subheader('About the Model and Technique')
-st.markdown("""
+st.header("About the Model and Technique")
+
+st.write("""
 This app uses a machine learning model trained to detect phishing emails based on their content. The steps involved in the model are:
 
-1. **Data Collection**: A dataset of phishing and legitimate emails is collected.
-2. **Preprocessing**: Emails are cleaned to remove HTML tags, punctuation, and numbers. They are then tokenized, stopwords are removed, and tokens are lemmatized.
-3. **Feature Extraction**: TF-IDF Vectorizer is used to convert the text data into numerical features.
-4. **Model Training**: A machine learning model (e.g., Logistic Regression, SVM, or another classifier) is trained on the processed data.
-5. **Prediction**: The trained model is used to predict whether new emails are phishing or not.
+1. **Data Collection**: The dataset containing email data used for training the model is CEAS_08.csv. [Curated Dataset - Phishing Email](https://figshare.com/articles/dataset/Curated_Dataset_-_Phishing_Email/24899952?file=43817124)
+2. **Preprocessing**: Emails are preprocessed using the preprocess_email function to clean the text and remove stopwords.
+3. **Feature Extraction**: TF-IDF Vectorizer from Scikit-learn is used to convert the cleaned email text into numerical features suitable for machine learning.
+4. **Model Training**: A Naive Bayes classifier (MultinomialNB) is trained on the processed email data to distinguish between phishing and non-phishing emails.
+5. **Model Evaluation**: The model's performance is evaluated using accuracy and a classification report.
+6. **Model Saving**: The trained model and TF-IDF vectorizer are saved using Joblib.
+7. **Streamlit Web Application**: A Streamlit app (app.py) provides a user interface where users can enter the body of an email. The app processes the input, uses the trained model to predict if the email is phishing, and displays the result.
 
 By using natural language processing (NLP) techniques, the model can analyze the textual content of emails and make predictions based on patterns learned during training.
 """)
+
 
 st.sidebar.markdown('### About')
 st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
