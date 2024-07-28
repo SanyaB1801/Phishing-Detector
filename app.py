@@ -80,7 +80,7 @@ Phishing is a type of social engineering attack often used to steal user data, i
 Phishing attacks have become increasingly sophisticated and often look legitimate. It's crucial to be cautious with unsolicited communications asking for sensitive information.
 """)
 
-st.image("mail-phishing.jpg", use_column_width=True)  # Adding an image for visual appeal
+st.image("mail-phishing.jpg", width=600)  # Adding an image for visual appeal
 
 st.subheader('About the Model and Technique')
 st.markdown("""
