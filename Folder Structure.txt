@@ -4,4 +4,5 @@ Phishing-Detector/
 ├── app.py
 ├── phishing_model.pkl
 ├── preprocess.ipynb
+├── requirements.txt
 └── tfidf_vectorizer.pkl
