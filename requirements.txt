@@ -1,7 +1,7 @@
 re
 tensorflow
-streamlit
+streamlit==1.37.0
 joblib
-pandas
+pandas==2.2.2
 scikit-learn
-nltk
+nlk==3.8.1
