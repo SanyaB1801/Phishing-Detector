@@ -30,7 +30,7 @@ def preprocess_email(email):
     return ' '.join(tokens)
 
 # Streamlit app
-st.set_page_config(page_title='Phishing Email Predictor', page_icon=':email:', layout='wide')
+st.set_page_config(page_title='Phishing Email Detector', page_icon=':email:', layout='wide')
 
 # CSS styles
 st.markdown("""
@@ -67,10 +67,10 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.sidebar.header('Phishing Email Predictor')
+st.sidebar.header('Phishing Email Detector')
 st.sidebar.write('Enter the email content in the text box below and click Predict to check if the email is a phishing attempt.')
 
-st.title('Phishing Email Predictor')
+st.title('Phishing Email Detector')
 st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
 st.subheader('What is Phishing?')
