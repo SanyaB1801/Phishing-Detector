@@ -3,6 +3,10 @@
 ## Objective:
 The primary goal of this project is to build a machine learning model capable of detecting phishing emails. Phishing emails are fraudulent messages designed to trick recipients into providing sensitive information, and detecting them is crucial for cybersecurity.
 
+## Demo:
+
+https://github.com/user-attachments/assets/aa69e834-d0aa-4eb0-9321-58572130a998
+
 ## Key Features:
 - Model Development: Developed a machine learning model to detect phishing emails with high accuracy.
 - Frontend Implementation: Designed and implemented the front-end using the Streamlit framework to provide a user-friendly web interface for real-time email phishing detection.
