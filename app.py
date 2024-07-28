@@ -73,7 +73,7 @@ st.sidebar.write('Enter the email content in the text box below and click Predic
 st.title('Phishing Email Predictor')
 st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
-st.image("https://i.imgur.com/ZybUw6F.png", use_column_width=True)  # Adding an image for visual appeal
+st.image("https://www.publicdomainpictures.net/en/view-image.php?image=585976&picture=mail-phishing", use_column_width=True)  # Adding an image for visual appeal
 
 st.subheader('Instructions:')
 st.markdown("""
