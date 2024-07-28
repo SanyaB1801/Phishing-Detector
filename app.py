@@ -73,7 +73,7 @@ st.sidebar.write('Enter the email content in the text box below and click Predic
 st.title('Phishing Email Detector')
 st.markdown('<p style="color:#006064;">This app uses a machine learning model to predict whether an email is a phishing attempt or not.</p>', unsafe_allow_html=True)
 
-st.subheader('Instructions:')
+st.header('Instructions:')
 st.markdown("""
 1. Enter the email content in the text area below.
 2. Click the **Predict** button to analyze the email.
@@ -102,7 +102,7 @@ Phishing attacks have become increasingly sophisticated and often look legitimat
 
 st.image("mail-phishing.jpg", width=600)  # Adding an image for visual appeal
 
-st.header("About the Model and Technique")
+st.subheader("About the Model and Technique")
 
 st.write("""
 This app uses a machine learning model trained to detect phishing emails based on their content. The steps involved in the model are:
