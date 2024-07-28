@@ -95,9 +95,6 @@ if st.button('Predict'):
     else:
         st.error('Please enter email content')
 
-st.sidebar.markdown('### About')
-st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
-
 st.subheader('What is Phishing?')
 st.markdown("""
 Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware, the freezing of the system as part of a ransomware attack, or the revealing of sensitive information.
@@ -117,6 +114,9 @@ This app uses a machine learning model trained to detect phishing emails based o
 
 By using natural language processing (NLP) techniques, the model can analyze the textual content of emails and make predictions based on patterns learned during training.
 """)
+
+st.sidebar.markdown('### About')
+st.sidebar.info('This app is designed to help identify phishing emails using natural language processing and machine learning techniques.')
 
 st.sidebar.markdown('### Contact')
 st.sidebar.info('For more information or feedback, please contact us at support@example.com.')
